@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+
+body {
+  background-color: #ffcc00;
+  padding: 20px;
+  margin: 0;
+}
+.pageMain {
+  height: calc(100vh - 150px); /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
+  background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,p,ul,li {
+  font-family: sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul.header {
+  background-color: #111;
+  padding: 0;
 }
-
-.App-link {
-  color: #61dafb;
+ul.header li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  background-color: #fff;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.nav{
+  background-color: #111;
+  padding: 0;
+}
+.nav li  {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.aLink{
+  text-decoration: none;
+  color: inherit;
 }
